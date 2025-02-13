@@ -1,6 +1,6 @@
 ## Portfolio
 
-Willkommen in meinem persönlichen Portfolio! 🎨🚀
+Willkommen zu meinem persönlichen Portfolio! 🎨🚀
 
 ## Features
 
