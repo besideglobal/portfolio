@@ -1,0 +1,122 @@
+.discoverWrapper {
+    padding-top: var(--defaultgap);
+}
+
+.discoverItem {
+    transition: 0.25s ease-in-out;
+}
+
+.discoverItem:hover {
+    transform: translateY(-3px);
+}
+
+.discoverItemImageWrapper {
+    width: 100%;
+    background-color: var(--secondbg);
+    border-radius: var(--borderradius);
+}
+
+.discoverItemImage {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    border-radius: var(--borderradius);
+    position: relative;
+    cursor: pointer;
+}
+
+.discoverItemImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.discoverItemImage:hover::after {
+    opacity: 1;
+}
+
+.discoverItemImage:hover .discoverInfo {
+    opacity: 1;
+}
+
+.discoverItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: cover;
+    border-radius: var(--borderradius);
+}
+
+.discoverInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 24px;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.discoverTitle {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.discoverDesc {
+    color: var(--foreground);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.discoverCFooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 24px;
+}
+
+.discoverBadges {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--smallgap);
+    padding-top: 12px
+}
+
+.discoverBadgeItem, .discoverBadgeSeparator {
+    font-size: 12px;
+}
+
+.discoverTopRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 24px;
+}
+
+.discoverTopRight svg {
+    height: 28px;
+    width: auto;
+}
+
+@media (max-width: 600px) {
+    .discoverItemImage {
+        max-height: 250px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .discoverItemImage {
+        max-height: 300px;
+    }
+}

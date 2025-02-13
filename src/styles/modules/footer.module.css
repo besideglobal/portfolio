@@ -1,0 +1,24 @@
+#footer {
+    padding: 0 0 64px 0;
+    background-color: var(--background);
+}
+
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerDate {
+    color: var(--fg-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+}
+
+.email {
+    color: var(--fg-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+}

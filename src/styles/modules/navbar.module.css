@@ -1,0 +1,50 @@
+.navbar {
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(16, 16, 16, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.navbarLogo {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.navbarWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarButton {
+    background-color: var(--button);
+    border: 1px solid var(--button);
+    outline: none;
+    border-radius: var(--btnradius);
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.navbarButton:hover {
+    background-color: var(--buttonHover);
+    border: 1px solid var(--buttonHover);
+}
+
+.navbarButton span {
+    display: flex;
+    align-items: center;
+}
+
+.navbarButton span svg {
+    margin-right: var(--smallgap);
+    width: 16px;
+    height: 16px;
+}
