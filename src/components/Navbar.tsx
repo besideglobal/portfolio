@@ -11,7 +11,10 @@ export default function Navbar() {
             <span className={styles.navbarLogo}>Tobias Lunkwitz</span>
           </Link>
           <div className={styles.navbarItems}>
-            <Link href="https://github.com/besideglobal" target="_blank">
+            <Link
+              href="https://github.com/besideglobal/portfolio"
+              target="_blank"
+            >
               <button className={styles.navbarButton}>
                 <span>
                   <GitHubLogoIcon />

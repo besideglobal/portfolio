@@ -7,7 +7,6 @@ import Image from "next/image";
 import ITNunweilerSkizze from "@/images/casestudies/itnunweiler/it-nunweiler-skizze.png";
 import ITNunweilerLogo from "@/images/casestudies/itnunweiler/logo-design.png";
 import ITNunweilerList from "@/images/casestudies/itnunweiler/list.png";
-import ITNunweilerOld from "@/images/casestudies/itnunweiler/itnunweiler-old.png";
 import ITNunweilerDesignID from "@/images/casestudies/itnunweiler/designid.png";
 
 interface CaseProcessProps {
